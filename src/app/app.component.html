@@ -1,15 +1,1 @@
-<form [formGroup]="loginForm" id="loginForm">
-    <div>
-        <input formControlName="username" placeholder="username" required>
-        <div *ngIf="submitted && loginForm.controls?.['username']?.errors" class="invalid-feedback">
-            <div *ngIf="loginForm.controls?.['username']?.errors?.['required']">Username is required</div>
-        </div>
-    </div>
-    <div>
-        <input formControlName="password" placeholder="password" required>
-        <div *ngIf="submitted && loginForm.controls?.['password']?.errors" class="invalid-feedback">
-            <div *ngIf="loginForm.controls?.['password']?.errors?.['required']">Password is required</div>
-        </div>
-    </div>
-    <button (click)="onSubmit()">Submit</button>
-</form>
+<router-outlet></router-outlet>
